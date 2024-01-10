@@ -2,10 +2,10 @@
  * The UserChoice class represents a user's choice for a Sudoku move.
  */
 public class UserChoice {
-    private int row;         // Row index for the move
-    private int column;         // Column index for the move
-    private int val;       // Value to be placed in the cell
-    private boolean isClear; // Flag indicating if the user wants to clear the cell
+    private final int row;         // Row index for the move
+    private final int column;         // Column index for the move
+    private final int val;       // Value to be placed in the cell
+    private final boolean isClear; // Flag indicating if the user wants to clear the cell
 
     /**
      * Constructor to create a UserChoice object with specified values.

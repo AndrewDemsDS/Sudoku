@@ -35,7 +35,7 @@ public class Sudoku {
         // Main game loop
         while (true) {
             // Get user input for the move
-            UserChoice choice = new UserChoice();
+            UserChoice choice;
             choice = getUserInput(N, b);
             int i = choice.getRow();
             int j = choice.getColumn();
