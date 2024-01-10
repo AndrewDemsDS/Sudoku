@@ -29,15 +29,6 @@ public class UserChoice {
         this.val = 1;
         this.isClear = false;
     }
-    /**
-     * A setter that sets the values of row, column and val
-     */
-    public void setChoice(int row, int col, int val, boolean isClear) {
-        this.row = row;
-        this.column = col;
-        this.val = val;
-        this.isClear = isClear;
-    }
 
     /**
      * Gets the row index for the move.

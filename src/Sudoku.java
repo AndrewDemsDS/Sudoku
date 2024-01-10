@@ -2,10 +2,10 @@
  *  Author: Andreas Demosthenous
  *  Written: 09/11/2023
  *  Last updated: 26/11/2023
- *
+ * <p>
  * Compilation: javac -cp .;./stdlib.jar Board.java UserChoice.java Sudoku.java
  * Execution: java -cp .;./stdlib.jar Sudoku <N> <game-file> *
- *
+ * <p>
  * The Java program is a Sudoku game.
  * It enables users to interactively input moves to fill in a Sudoku board, ensuring adherence to game rules.
  * The program includes classes for managing the Sudoku board, user choices, and game logic, providing a console-based interface for playing and saving Sudoku games.
@@ -36,7 +36,7 @@ public class Sudoku {
         while (true) {
             // Get user input for the move
             UserChoice choice = new UserChoice();
-            choice = getUserInput(choice,N, b);
+            choice = getUserInput(N, b);
             int i = choice.getRow();
             int j = choice.getColumn();
             int val = choice.getValue();
@@ -95,7 +95,8 @@ public class Sudoku {
      * b The Sudoku board.
      * returns the UserChoice object representing the user's move.
      */
-    private UserChoice getUserInput(UserChoice choice,int N, Board b) {
+    private UserChoice getUserInput(int N, Board b) {
+        UserChoice choice;
         do {
             String input = scanner.next();
             choice = parseInput(input);
